@@ -25,6 +25,13 @@ export default function Contact() {
     return name === 'firstName' ? setFirstName(value) : name === 'email' ? setEmail(value) : name === 'message' ? (setMessage(value), setIsMessageTrue(true))  : null;
   };
 
+  const handleSubmit = (e) => {
+    alert(`Hello ${firstName}, thanks for sending a message!`);
+    setFirstName('');
+    setEmail('');
+    setMessage('');
+  }
+
   console.log('isMessageTrue:', isMessageTrue);
   console.log('message:', message);
 
@@ -45,8 +52,9 @@ export default function Contact() {
         <div className="mb-3">
             <label htmlFor="messageInput" className="form-label"><h4>Message</h4></label>
             <textarea name="message" value={message} onChange={handleInputChange} className={`form-control ${isMessageTrue && message.trim() === '' ? 'is-invalid' : ''}`} id="messageInput" rows="4"></textarea>
-            {!isMessageTrue && (<div className="invalid-feedback">This field is required</div>)}
+            {isMessageTrue && <div className="invalid-feedback">This field is required</div>}
         </div>
+        <button className="btn btn-success" onClick={handleSubmit}>Submit</button>
       </div>
         </div>
       </div>
