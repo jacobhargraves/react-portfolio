@@ -12,6 +12,8 @@ export default function Projects(props) {
               </h3>
               <hr></hr>
               <p className="list-group-item">{props.description}</p>
+              <hr></hr>
+              <a href={props.githubURL} target="_blank" class="btn btn-primary mb-2">View on GitHub</a>
             </div>
           </a>
         ))}

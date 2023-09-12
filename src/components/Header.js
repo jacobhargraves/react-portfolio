@@ -4,6 +4,7 @@ import Resume from './pages/Resume';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -25,6 +26,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <>
     <header className='container'>
       <nav class="navbar navbar-expand-md header" aria-label="Fourth navbar example">
         <div class="container-fluid">
@@ -37,8 +39,10 @@ export default function PortfolioContainer() {
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
           </div>
         </div>
-        </nav>
-      {renderPage()}
+      </nav>
     </header>
+    {renderPage()}
+    <Footer />
+    </>
   );
 }
