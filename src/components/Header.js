@@ -49,7 +49,7 @@ export default function PortfolioContainer() {
       </nav>
     </header>
     {renderPage()}
-    <Footer />
+    <Footer currentPage={currentPage}/>
     </>
   );
 }
