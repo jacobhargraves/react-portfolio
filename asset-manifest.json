@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.8fc1c5b4.css",
+    "main.js": "/react-portfolio/static/js/main.b3a85360.js",
+    "static/media/eazyMealz.png": "/react-portfolio/static/media/eazyMealz.c0860f3385bc437c2188.png",
+    "static/media/ptProject.png": "/react-portfolio/static/media/ptProject.c44071600833236506a3.png",
+    "static/media/techBlog.png": "/react-portfolio/static/media/techBlog.a5bade9ac4e50b494476.png",
+    "static/media/portrait.jpeg": "/react-portfolio/static/media/portrait.f089b739a50eec05b01a.jpeg",
+    "static/media/socialMedia.png": "/react-portfolio/static/media/socialMedia.1d20738aac62b269975b.png",
+    "static/media/eCommerce.png": "/react-portfolio/static/media/eCommerce.57fbcb030a3aedcbb734.png",
+    "static/media/textEditor.png": "/react-portfolio/static/media/textEditor.727ed62fc59357c6fd84.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.8fc1c5b4.css.map": "/react-portfolio/static/css/main.8fc1c5b4.css.map",
+    "main.b3a85360.js.map": "/react-portfolio/static/js/main.b3a85360.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fc1c5b4.css",
+    "static/js/main.b3a85360.js"
+  ]
+}
