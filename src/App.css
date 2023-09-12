@@ -1,0 +1,46 @@
+.background {
+    height: 100vh;
+    background: linear-gradient(360deg, #2f3739, #39464d, #375b6a);
+    color: white;
+}
+
+.custom-button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border: 2px solid #265B8B;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.custom-button:hover {
+    color: white;
+}
+
+.custom-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #265B8B;
+    z-index: -1;
+    transition: .5s;
+}
+
+.custom-button:hover:before {
+    width: 100%;
+}
+
+.custom-button:hover {
+    color: white;
+}
